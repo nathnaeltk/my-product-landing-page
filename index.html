@@ -17,6 +17,11 @@
       <li><a href="#section-product">TelgAds</a></li>
       <li><a href="#">About</a></li>
       <li><a href="#">Contact</a></li>
+      <li><a href="">
+        <div class="logo">
+          <img src="images/logo.png" alt="Logo">
+        </div>
+      </a></li>
     </ul>
   </div>
   <section class="hero-section">
@@ -29,18 +34,14 @@
       </div>
       <h1 class="hero-title">Start here:</br>Reach Millions.</h1>
       <p class="tagline">Reach millions or be millionaire rich.</p>
-      <a class="call-to-action" href="#features">Learn More</a>
+        <div class="call-to-action root">
+          <a href="#" class="bounce">&#8595;</a> 
+        </div>
+        
+      
         <!-- Include particles.js library -->
       <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
       <script src="app.js"></script> <!-- Create a separate JavaScript file -->
-      <script>
-        function toggleSidebar(element) {
-          const sidebar = document.getElementById('sidebar');
-          const hamburger = element;
-          sidebar.classList.toggle('sidebar-active');
-          hamburger.classList.toggle('active');
-        }
-      </script>
       
       <div class="social-media">
         <a href="https://www.facebook.com/your_facebook_page" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
@@ -65,25 +66,5 @@
       <img src="https://images.unsplash.com/photo-1686068053740-5f880b300af8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80" alt="Random Image">
     </div>
   </section>
-
-
-  <script>
-    // Smooth scrolling when clicking on the sidebar links
-    const sidebarLinks = document.querySelectorAll('.sidebar-menu li a');
-    sidebarLinks.forEach(link => {
-      link.addEventListener('click', (e) => {
-        e.preventDefault();
-        const target = document.querySelector(link.getAttribute('href'));
-        const offsetTop = target.offsetTop;
-  
-        window.scrollTo({
-          top: offsetTop,
-          behavior: 'smooth'
-        });
-      });
-    });
-  </script>
-
 </body>
-
 </html>

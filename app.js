@@ -18,11 +18,18 @@ particlesJS('particles-js', {
       random: true
     },
     size: {
-      value: 5 // Adjust particle size
+      value: 4 // Adjust particle size
     },
     move: {
       enable: true,
-      speed: 3 // Adjust particle movement speed
+      speed: 5 // Adjust particle movement speed
     }
   }
 });
+
+function toggleSidebar(element) {
+  const sidebar = document.getElementById('sidebar');
+  const hamburger = element;
+  sidebar.classList.toggle('sidebar-active');
+  hamburger.classList.toggle('active');
+}
