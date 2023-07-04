@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Product Landing Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="styles.css"> <!-- Create a separate CSS file -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div id="sidebar" class="sidebar">
+    <ul class="sidebar-menu">
+      <li><a href="#">Home</a></li>
+      <li><a href="#section-product">TelgAds</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+  <section class="hero-section">
+    <div id="particles-js"></div> <!-- Container for particles.js -->
+    <div class="content">
+      <div class="hamburger" onclick="toggleSidebar(this)">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <h1 class="hero-title">Start here:</br>Reach Millions.</h1>
+      <p class="tagline">Reach millions or be millionaire rich.</p>
+      <a class="call-to-action" href="#features">Learn More</a>
+        <!-- Include particles.js library -->
+      <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+      <script src="app.js"></script> <!-- Create a separate JavaScript file -->
+      <script>
+        function toggleSidebar(element) {
+          const sidebar = document.getElementById('sidebar');
+          const hamburger = element;
+          sidebar.classList.toggle('sidebar-active');
+          hamburger.classList.toggle('active');
+        }
+      </script>
+      
+      <div class="social-media">
+        <a href="https://www.facebook.com/your_facebook_page" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/your_instagram_page" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+        <a href="https://github.com/your_github_page" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+        <a href="https://twitter.com/your_twitter_page" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+        <a href="https://t.me/your_twitter_page" target="_blank" rel="noopener noreferrer"><i class="fab fa-telegram"></i></a>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section-product">
+    <div class="product-content">
+      <h2 class="section-title">Our Product</h2>
+      <p class="product-paragraph">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus nihil labore voluptatem temporibus architecto expedita quod reprehenderit pariatur quaerat maxime dicta odio aperiam nostrum, doloremque et nobis. Incidunt delectus explicabo vel maxime beatae impedit mollitia accusamus dolore amet! Quasi ducimus saepe, eaque reprehenderit voluptatibus necessitatibus ratione et cumque, animi quo reiciendis consequatur iure similique ut alias delectus atque deserunt commodi dolore harum nesciunt consequuntur quaerat eligendi. Ad dolorem, reiciendis nostrum asperiores dolorum eum. Possimus, magni, aspernatur laudantium deserunt corrupti non aut laborum blanditiis atque enim eligendi quo aliquid labore! Excepturi commodi fugiat ratione quos sit corporis, sed minima autem. Aspernatur laborum numquam architecto, id cum reprehenderit harum dolorem quod! Dolores veniam asperiores deserunt nobis est aspernatur, ipsum dicta sint earum, vel fuga nostrum dignissimos aut quos magnam ipsa? Ut saepe debitis quia eos reiciendis unde consequuntur, enim eveniet? Veniam ullam minima beatae ipsa facere maxime ab corporis consequuntur, sapiente sunt?
+      </p>
+    </div>
+    <div class="product-image">
+      <img src="https://images.unsplash.com/photo-1686068053740-5f880b300af8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80" alt="Random Image">
+    </div>
+  </section>
+
+
+  <script>
+    // Smooth scrolling when clicking on the sidebar links
+    const sidebarLinks = document.querySelectorAll('.sidebar-menu li a');
+    sidebarLinks.forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const target = document.querySelector(link.getAttribute('href'));
+        const offsetTop = target.offsetTop;
+  
+        window.scrollTo({
+          top: offsetTop,
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+
+</body>
+
+</html>

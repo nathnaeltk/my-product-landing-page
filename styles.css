@@ -1,0 +1,198 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: rgb(21, 152, 179);
+  background-color: linear-gradient(90deg, rgba(21, 152, 179, 1) 0%, rgba(0, 236, 255, 1) 100%);
+  color: #ffffff; /* White text */
+}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align left */
+  justify-content: center;
+  height: 100vh;
+  padding-left: 60px; /* Add more space from the left edge */
+  padding-right: 60px; /* Add more space from the right edge */
+  position: relative; /* Add positioning */
+}
+
+.hamburger {
+  position: fixed;
+  top: 40px;
+  right: 70px; /* Move the hamburger further to the right */
+  width: 45px;
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.hamburger.active .line:nth-child(1) {
+  transform: translateY(3px) rotate(45deg);
+  background-color: rgb(21, 134, 179); /* Blue */
+}
+
+.hamburger.active .line:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .line:nth-child(3) {
+  transform: translateY(-12px) rotate(-45deg);
+  background-color: rgb(21, 134, 179); /* Blue */
+}
+
+.hero-title {
+  font-size: 7rem; /* Increase the font size */
+  line-height: 100px;
+  font-weight: bold;
+  color: #ffffff; /* White title */
+  text-align: left; /* Align left */
+  margin-bottom: 0px; /* Reduce the space between title and paragraph */
+}
+
+.tagline {
+  width: 40rem;
+  font-size: 1.5rem;
+  text-align: left; /* Align left */
+  margin: 0 0 0 10px;
+}
+
+.call-to-action {
+  display: inline-block;
+  font-size: 18px;
+  margin-top: 1rem;
+  margin-left: 1rem; /* Add margin to the left side */
+  padding: 1rem 2rem;
+  background-color: #ffffff; /* White button */
+  color: rgb(21, 134, 179); /* Blue button text */
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  text-align: left; /* Align left */
+  cursor: pointer; /* Add cursor pointer */
+  position: relative; /* Add relative positioning */
+  z-index: 2; /* Set a higher z-index to place it above particles.js */
+}
+
+.call-to-action:hover {
+  color: rgb(6, 75, 136);
+  transition: 0.5s;
+}
+.social-media {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Vertically center the icons and line */
+}
+
+.social-media::before,
+.social-media::after {
+  content: "";
+  flex-grow: 1;
+  height: 1px;
+  background-color: #ffffff;
+  margin: 0 32px;
+}
+
+.social-media a {
+  color: #ffffff;
+  font-size: 1.8rem;
+  margin-right: 23px;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -250px;
+  width: 250px;
+  height: 100vh;
+  background-color: #ffffff; /* White background */
+  transition: all 0.3s ease;
+  z-index: 1;
+  overflow-y: auto;
+  border-top-left-radius: 40px; /* Rounded top-left corner */
+  border-bottom-left-radius: 40px; /* Rounded bottom-left corner */
+}
+
+.sidebar-active {
+  right: 0;
+}
+
+.sidebar-menu {
+  font-size: 5rem;
+  list-style: none;
+  margin-top: 100px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+}
+
+.sidebar-menu li {
+  text-decoration: none;
+  cursor: pointer; /* Add cursor pointer */
+  font-size: 2.1rem; /* Larger font size */
+  line-height: 4rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-bottom: 1px solid #ccc; /* Add a thin line between menu items */
+  text-align: right;
+}
+
+.sidebar-menu li a {
+  color: rgb(4, 80, 110);
+  text-decoration: none;
+}
+
+.section-product {
+  background-color: #ffffff; /* White background */
+  padding: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.product-content {
+  color: rgb(35, 37, 37);
+  flex: 2;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: #1a1a1a;
+  margin-bottom: 20px;
+}
+
+.product-paragraph {
+  font-size: 1.2rem;
+}
+
+.product-image {
+  flex: 1;
+  text-align: right;
+}
+
+.product-image img {
+  max-width: 100%;
+  height: auto;
+}
