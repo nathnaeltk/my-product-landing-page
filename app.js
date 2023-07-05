@@ -22,7 +22,7 @@ particlesJS('particles-js', {
     },
     move: {
       enable: true,
-      speed: 5 // Adjust particle movement speed
+      speed: 2.5 // Adjust particle movement speed
     }
   }
 });
