@@ -7,6 +7,10 @@ body {
   color: #ffffff; /* White text */
 }
 
+a{
+  text-decoration: none;
+  color: #ffbb00;
+}
 #particles-js {
   position: absolute;
   width: 100%;
@@ -88,7 +92,7 @@ body {
 }
 
 .tagline {
-  width: 40rem;
+  width: 55rem;
   font-size: 1.5rem;
   text-align: left; /* Align left */
   margin: 0 0 0 10px;
@@ -166,6 +170,7 @@ body {
   margin: 0 12px 0 12px;
 }
 
+
 .sidebar {
   position: fixed;
   top: 0;
@@ -211,20 +216,20 @@ body {
 }
 
 .section-product {
-  background-color: #ffffff; /* White background */
+  background-color: #001C30; /* White background */
   padding: 60px;
   display: flex;
   align-items: center;
 }
 
 .product-content {
-  color: rgb(35, 37, 37);
+  color: rgb(255, 255, 255);
   flex: 2;
 }
 
 .section-title {
   font-size: 2.5rem;
-  color: #1a1a1a;
+  color: #faa200;
   margin-bottom: 20px;
 }
 
