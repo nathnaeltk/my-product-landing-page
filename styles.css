@@ -4,7 +4,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   background: rgb(45,68,84);
   background: linear-gradient(90deg, rgb(9, 44, 68) 0%, rgb(1, 18, 31) 100%);
-  color: #ffffff; /* White text */
+  color: #ffffff; 
 }
 
 a{
@@ -20,18 +20,18 @@ a{
 .content {
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* Align left */
+  align-items: flex-start; 
   justify-content: center;
   height: 100vh;
-  padding-left: 60px; /* Add more space from the left edge */
-  padding-right: 60px; /* Add more space from the right edge */
-  position: relative; /* Add positioning */
+  padding-left: 60px; 
+  padding-right: 60px; 
+  position: relative;
 }
 
 .hamburger {
   position: fixed;
   top: 40px;
-  right: 70px; /* Move the hamburger further to the right */
+  right: 70px; 
   width: 45px;
   height: 20px;
   display: flex;
@@ -51,7 +51,7 @@ a{
 
 .hamburger.active .line:nth-child(1) {
   transform: translateY(3px) rotate(45deg);
-  background-color: rgb(1, 18, 31); /* Blue */
+  background-color: rgb(1, 18, 31); 
 }
 
 .hamburger.active .line:nth-child(2) {
@@ -60,7 +60,7 @@ a{
 
 .hamburger.active .line:nth-child(3) {
   transform: translateY(-14px) rotate(-45deg);
-  background-color: rgb(1, 18, 31); /* Blue */
+  background-color: rgb(1, 18, 31); 
 }
 .particles-container {
   position: absolute;
@@ -78,23 +78,23 @@ a{
 }
 
 .logo img {
-  width: 120px; /* Adjust the width and height as needed */
+  width: 120px; 
   height: 120px;
   opacity: 0.6;
 }
 .hero-title {
-  font-size: 7rem; /* Increase the font size */
+  font-size: 7rem; 
   line-height: 100px;
   font-weight: bold;
-  color: #ffffff; /* White title */
-  text-align: left; /* Align left */
-  margin-bottom: 0px; /* Reduce the space between title and paragraph */
+  color: #ffffff; 
+  text-align: left; 
+  margin-bottom: 0px; 
 }
 
 .tagline {
   width: 55rem;
   font-size: 1.2rem;
-  text-align: left; /* Align left */
+  text-align: left; 
   margin: 0 0 0 10px;
 }
 
@@ -102,11 +102,11 @@ a{
 .call-to-action {
   display: inline-block;
   font-size: 18px;
-  text-align: left; /* Align left */
-  cursor: pointer; /* Add cursor pointer */
-  position: relative; /* Add relative positioning */
+  text-align: left; 
+  cursor: pointer; 
+  position: relative; 
   left: 30px;
-  z-index: 2; /* Set a higher z-index to place it above particles.js */
+  z-index: 2; 
 }
 
 .bounce {
@@ -148,7 +148,7 @@ a{
   right: 0;
   display: flex;
   justify-content: center;
-  align-items: center; /* Vertically center the icons and line */
+  align-items: center; 
 }
 
 .social-media::before,
@@ -173,12 +173,12 @@ a{
   right: -250px;
   width: 250px;
   height: 100vh;
-  background-color: #ffffff; /* White background */
+  background-color: #ffffff; 
   transition: all 0.3s ease;
   z-index: 1;
   overflow-y: auto;
-  border-top-left-radius: 40px; /* Rounded top-left corner */
-  border-bottom-left-radius: 40px; /* Rounded bottom-left corner */
+  border-top-left-radius: 40px; 
+  border-bottom-left-radius: 40px; 
 }
 
 .sidebar-active {
@@ -197,12 +197,12 @@ a{
 
 .sidebar-menu li {
   text-decoration: none;
-  cursor: pointer; /* Add cursor pointer */
-  font-size: 1.2rem; /* Larger font size */
+  cursor: pointer; 
+  font-size: 1.2rem; 
   line-height: 4rem;
   font-weight: bold;
   cursor: pointer;
-  border-bottom: 1px solid #ccc; /* Add a thin line between menu items */
+  border-bottom: 1px solid #ccc; 
   text-align: right;
 }
 
@@ -212,7 +212,7 @@ a{
 }
 
 .section-product {
-  background-color: #001C30; /* White background */
+  background-color: #001C30; 
   padding: 60px;
   display: flex;
   align-items: center;
