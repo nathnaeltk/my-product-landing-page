@@ -1,10 +1,10 @@
 particlesJS('particles-js', {
   particles: {
     number: {
-      value: 80, // Adjust the number of particles
+      value: 100, // Adjust the number of particles
       density: {
         enable: true,
-        value_area: 800 // Increase or decrease the particle density
+        value_area: 1000 // Increase or decrease the particle density
       }
     },
     color: {
@@ -14,7 +14,7 @@ particlesJS('particles-js', {
       type: 'circle' // Change the particle shape if desired
     },
     opacity: {
-      value: 0.5, // Adjust particle opacity
+      value: 0.2, // Adjust particle opacity
       random: true
     },
     size: {

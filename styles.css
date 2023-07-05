@@ -2,8 +2,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
-  background: rgb(21, 152, 179);
-  background-color: linear-gradient(90deg, rgba(21, 152, 179, 1) 0%, rgba(0, 236, 255, 1) 100%);
+  background: rgb(0,28,48);
+  background: linear-gradient(90deg, rgba(0,28,48,1) 0%, rgba(13,55,84,1) 48%, rgba(0,28,48,1) 100%);
   color: #ffffff; /* White text */
 }
 
@@ -68,7 +68,6 @@ a{
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1;
 }
 .logo {
   position: absolute;
@@ -92,10 +91,18 @@ a{
 }
 
 .tagline {
+  display: block;
   width: 55rem;
   font-size: 1.5rem;
   text-align: left; /* Align left */
   margin: 0 0 0 10px;
+}
+
+.get-started{
+  width: 55rem;
+  font-size: 1.5rem;
+  text-align: left; /* Align left */
+  margin: 10px 0 0 10px;
 }
 
 .call-to-action {
@@ -105,7 +112,6 @@ a{
   cursor: pointer; /* Add cursor pointer */
   position: relative; /* Add relative positioning */
   left: 30px;
-  z-index: 2; /* Set a higher z-index to place it above particles.js */
 }
 
 .bounce {
@@ -246,7 +252,20 @@ a{
   max-width: 100%;
   height: auto;
 }
+
+.on-new-line-for-mobile {
+  display: none;
+}
+
 @media screen and (max-width: 768px) {
+  .get-started {
+    line-break: anywhere;
+  }
+
+  .on-new-line-for-mobile {
+    display: inline-block;
+    width: 100%;
+  }
   .hamburger {
     top: 20px;
     right: 20px;
@@ -257,6 +276,9 @@ a{
     line-height: 4rem;
   }
 
+  .tagline{
+    display: none;
+  }
   .sidebar-menu li{
     font-size: 1.3rem;
   }
