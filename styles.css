@@ -327,6 +327,7 @@ a{
   .hero-title{
     font-size: 4rem;
     line-height: 3.4rem;
+    margin-top: -2rem;
   }
 
   .sidebar-menu li{
