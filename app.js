@@ -33,3 +33,4 @@ function toggleSidebar(element) {
   sidebar.classList.toggle('sidebar-active');
   hamburger.classList.toggle('active');
 }
+

@@ -152,7 +152,7 @@ a{
 
 .social-media a {
   color: #ffffff;
-  font-size: 1.3rem;
+  font-size: 1.15rem;
   margin: 0 12px 0 12px;
 }
 
@@ -307,6 +307,7 @@ a{
 .on-new-line-for-mobile {
   display: none;
 }
+
 
 @media screen and (max-width: 768px) {
   .hamburger {
