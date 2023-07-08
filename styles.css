@@ -220,6 +220,8 @@ a{
 
 .product-paragraph {
   font-size: 1.2rem;
+  text-align: justify;
+  width: 45rem;
 }
 
 .product-image {
@@ -231,6 +233,7 @@ a{
 .product-image img {
   max-width: 100%;
   height: auto;
+  border-radius: 10px;
 }
 
 .why-us-section {
@@ -240,7 +243,7 @@ a{
 }
 
 .section-title {
-  font-size: 2rem;
+  font-size: 3rem;
   margin-bottom: 30px;
   color: #ffffff;
 }
@@ -328,13 +331,13 @@ a{
 .contact-image {
   flex: 1;
   margin-right: 30px;
-  margin-left: 100px;
+  margin-left: 120px;
 }
 
 .contact-image img {
   max-width: 100%;
   height: auto;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .contact-content {
@@ -371,7 +374,7 @@ input[type="email"]:focus {
 
 textarea:focus {
   outline: none;
-  box-shadow: 0 0 5px #ff9100;
+  box-shadow: 0 0 7px #ff9100;
 }
 
 textarea {
@@ -386,7 +389,6 @@ textarea {
   text-decoration: none;
   border-radius: 5px;
   font-family: 'Montserrat', sans-serif;
-  transition: background-color 0.3s ease;
 }
 
 .btn:hover {
@@ -408,10 +410,10 @@ textarea {
   }
 
   .contact-image {
-    margin-right: 0;
-    margin-bottom: 30px;
+    display: none; /* Hide the image on mobile */
   }
 }
+
 
 
 @media screen and (max-width: 768px) {
@@ -478,7 +480,8 @@ textarea {
 
   /* Center-align the title and paragraph */
   .product-content {
-    text-align: center;
+    text-align: justify;
+    margin-left: 0;
     max-width: 500px;
   }
 
