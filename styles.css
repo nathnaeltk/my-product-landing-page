@@ -9,7 +9,7 @@ body {
 
 a{
   text-decoration: none;
-  color: #ff9100;
+  color: #ffa600;
 }
 #particles-js {
   position: absolute;
@@ -51,7 +51,7 @@ a{
 
 .hamburger.active .line:nth-child(1) {
   transform: translateY(3px) rotate(45deg);
-  background-color: rgb(1, 18, 31); 
+  background-color: rgb(2, 94, 163); 
 }
 
 .hamburger.active .line:nth-child(2) {
@@ -60,7 +60,7 @@ a{
 
 .hamburger.active .line:nth-child(3) {
   transform: translateY(-14px) rotate(-45deg);
-  background-color: rgb(1, 18, 31); 
+  background-color: rgb(2, 94, 163); 
 }
 .particles-container {
   position: absolute;
@@ -92,7 +92,7 @@ a{
 }
 
 .hero-title span{
-  color: #ff9100;
+  color: #ffa600;
 }
 
 .tagline {
@@ -215,6 +215,7 @@ a{
 .product-content {
   color: rgb(255, 255, 255);
   flex: 2;
+  margin-left: 60px;
 }
 
 .product-paragraph {
@@ -224,6 +225,7 @@ a{
 .product-image {
   flex: 1;
   text-align: right;
+  margin-right: 60px;
 }
 
 .product-image img {
@@ -260,7 +262,7 @@ a{
 
 .reason i {
   font-size: 40px;
-  color: #ff9100;
+  color: #ffa600;
   margin-bottom: 10px;
 }
 
@@ -282,7 +284,7 @@ a{
 .btn {
   display: inline-block;
   padding: 12px 24px;
-  background-color: #ff9100;
+  background-color: #ffa600;
   color: #001C30;
   font-size: 1.2rem;
   text-decoration: none;
@@ -305,6 +307,110 @@ a{
 
 .on-new-line-for-mobile {
   display: none;
+}
+
+
+
+
+.contact-section {
+  background-color: #001C30;
+  color: #ffffff;
+  padding: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contact-image {
+  flex: 1;
+  margin-right: 30px;
+  margin-left: 100px;
+}
+
+.contact-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.contact-content {
+  flex: 1;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  transition: box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+  outline: none;
+  box-shadow: 0 0 5px #ff9100;
+}
+
+textarea:focus {
+  outline: none;
+  box-shadow: 0 0 5px #ff9100;
+}
+
+textarea {
+  height: 120px;
+}
+
+.btn {
+  padding: 12px 24px;
+  background-color: #ffa600;
+  color: #001C30;
+  font-size: 1.2rem;
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: 'Montserrat', sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #ffbb00;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-section {
+    padding: 30px;
+  }
+
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .contact-image,
+  .contact-content {
+    width: 100%;
+  }
+
+  .contact-image {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
 }
 
 
