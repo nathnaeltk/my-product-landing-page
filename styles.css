@@ -233,7 +233,7 @@ a{
 .product-image img {
   max-width: 100%;
   height: auto;
-  border-radius: 10px;
+  border-radius: 15px;
 }
 
 .why-us-section {
@@ -312,9 +312,6 @@ a{
   display: none;
 }
 
-
-
-
 .contact-section {
   background-color: #001C30;
   color: #ffffff;
@@ -337,7 +334,7 @@ a{
 .contact-image img {
   max-width: 100%;
   height: auto;
-  border-radius: 10px;
+  border-radius: 15px;
 }
 
 .contact-content {
@@ -393,6 +390,13 @@ textarea {
 
 .btn:hover {
   background-color: #ffbb00;
+  cursor: pointer;
+}
+
+.footer{
+  background-color: #012b49;
+  display: grid;
+  place-items: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -477,6 +481,9 @@ textarea {
   .product-image {
     display: none;
   }
+  .product-paragraph{
+    width: unset;
+  }
 
   /* Center-align the title and paragraph */
   .product-content {
@@ -491,5 +498,8 @@ textarea {
 
   .product-paragraph {
     font-size: 1rem;
+  }
+  .footer p{
+    font-size: 7pt;
   }
 }
