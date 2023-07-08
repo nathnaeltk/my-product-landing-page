@@ -159,6 +159,11 @@ a{
   font-size: 1.15rem;
   margin: 0 12px 0 12px;
 }
+.social-media a:hover {
+  color: #ffbb00;
+  font-size: 1.2rem;
+  transition: 0.5s;
+}
 
 
 .sidebar {
@@ -286,6 +291,7 @@ a{
 
 .btn {
   display: inline-block;
+  cursor: pointer;
   padding: 12px 24px;
   background-color: #ffa600;
   color: #001C30;
@@ -378,46 +384,11 @@ textarea {
   height: 120px;
 }
 
-.btn {
-  padding: 12px 24px;
-  background-color: #ffa600;
-  color: #001C30;
-  font-size: 1.2rem;
-  text-decoration: none;
-  border-radius: 5px;
-  font-family: 'Montserrat', sans-serif;
-}
-
-.btn:hover {
-  background-color: #ffbb00;
-  cursor: pointer;
-}
-
 .footer{
   background-color: #012b49;
   display: grid;
   place-items: center;
 }
-
-@media screen and (max-width: 768px) {
-  .contact-section {
-    padding: 30px;
-  }
-
-  .contact-container {
-    flex-direction: column;
-  }
-
-  .contact-image,
-  .contact-content {
-    width: 100%;
-  }
-
-  .contact-image {
-    display: none; /* Hide the image on mobile */
-  }
-}
-
 
 
 @media screen and (max-width: 768px) {
@@ -499,6 +470,35 @@ textarea {
   .product-paragraph {
     font-size: 1rem;
   }
+  .contact-section {
+    padding: 30px;
+  }
+
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .contact-image,
+  .contact-content {
+    width: 100%;
+  }
+
+  .contact-image {
+    display: none; /* Hide the image on mobile */
+  }
+  
+  .btn{
+    display: inline-block;
+    cursor: pointer;
+    padding: 12px 24px;
+    background-color: #ffa600;
+    color: #001C30;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+
   .footer p{
     font-size: 7pt;
   }
